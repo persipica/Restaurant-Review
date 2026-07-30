@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+html.dark,
+html.dark body {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* 전체 배경 */
+.dark .bg-white {
+  background-color: #111827 !important;
+}
+
+.dark .bg-gray-50,
+.dark .bg-gray-100 {
+  background-color: #1f2937 !important;
+}
+
+.dark .bg-yellow-50,
+.dark .bg-yellow-100 {
+  background-color: #1f2937 !important;
+}
+
+/* 포인트 색상은 유지 */
+.dark .bg-yellow-200,
+.dark .bg-yellow-300 {
+  background-color: #facc15 !important;
+  color: #111827 !important;
+}
+
+.dark .bg-teal-500,
+.dark .bg-teal-600 {
+  background-color: #14b8a6 !important;
+}
+
+/* 텍스트 */
+.dark .text-black {
+  color: #f9fafb !important;
+}
+
+.dark .text-gray-900,
+.dark .text-gray-800,
+.dark .text-gray-700 {
+  color: #e5e7eb !important;
+}
+
+.dark .text-gray-600,
+.dark .text-gray-500 {
+  color: #cbd5e1 !important;
+}
+
+.dark .bg-yellow-200 .text-black,
+.dark .bg-yellow-300 .text-black,
+.dark .bg-yellow-200.text-black,
+.dark .bg-yellow-300.text-black {
+  color: #111827 !important;
+}
+
+/* 테두리와 그림자 */
+.dark .border-black {
+  border-color: #f8fafc !important;
+}
+
+.dark .shadow-black {
+  --tw-shadow-color: #f8fafc !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
+/* 입력창 */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #111827 !important;
+  color: #f9fafb !important;
+  border-color: #f8fafc !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* 모달/알림 색상 */
+.dark .bg-blue-100 {
+  background-color: #1e3a8a !important;
+  color: #eff6ff !important;
+}
+
+.dark .bg-green-100 {
+  background-color: #14532d !important;
+  color: #dcfce7 !important;
+}
+
+.dark .bg-red-100 {
+  background-color: #7f1d1d !important;
+  color: #fee2e2 !important;
+}
+
+/* 이미지 영역 배경 */
+.dark .bg-gray-200,
+.dark .bg-gray-300 {
+  background-color: #374151 !important;
+}
+
+@keyframes reaction-bounce {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  20% {
+    transform: scale(1.25) rotate(-8deg);
+  }
+
+  40% {
+    transform: scale(1.18) rotate(8deg);
+  }
+
+  60% {
+    transform: scale(1.12) rotate(-5deg);
+  }
+
+  80% {
+    transform: scale(1.05) rotate(3deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.reaction-animate {
+  animation: reaction-bounce 0.45s ease-in-out;
+}
+
+@keyframes category-dial-down {
+  0% {
+    transform: translateY(-110%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(8%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.roulette-fixed-box {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  color: #111827 !important;
+  border-color: #111827 !important;
+  --tw-shadow-color: #111827 !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
+.roulette-fixed-box * {
+  color: #111827 !important;
+}
